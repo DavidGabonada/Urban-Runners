@@ -1,0 +1,1610 @@
+fileFormatVersion: 2
+guid: e0fe6b16b3ed8b944affeb870ded8bb1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 384
+        width: 47
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb57c51d1ed95c54f89eb33c4d26e1c6
+      internalID: -207706335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 384
+        width: 50
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b320e48b6c8cee14487b0fb560a2b373
+      internalID: -221299605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 384
+        width: 52
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e97140e7fb53994ebb2925dc802c44d
+      internalID: -365238233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 384
+        width: 50
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366c1276f4aca6343862afeb2407c0f2
+      internalID: 956939885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 384
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1229c0e463d38d64fa0129bb7e31accd
+      internalID: 2082775383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_5
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 384
+        width: 50
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a203d8aa62b178d488d00eb82fb742d4
+      internalID: 1228177278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_6
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 384
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b744f4b956cea6345991d9cb9ac57435
+      internalID: 723157746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_7
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 384
+        width: 48
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db8fedffc9b5644b8941ef709023ebd
+      internalID: 1450033700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 336
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa09f33d34e565c4cbda8a173a947e37
+      internalID: 1555562558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_9
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 336
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88bd2770ff8cde46831ec98e5f70f11
+      internalID: -1000374090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_10
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 336
+        width: 45
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ac56f12b03fbf45927aef305257eb9
+      internalID: 1503027224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_11
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 336
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f9f99a3f0614d488eb5ce6b01432e5
+      internalID: -1385853173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_12
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 336
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa7784352d5d5247a1e3b69b12b85a8
+      internalID: 341780642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_13
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 336
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277e309177578dd4db6adeecf2caf13a
+      internalID: -798880901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_14
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 336
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e376beadadf98479f9f5e7f2f19600
+      internalID: 278264503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_15
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 336
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf84b9e7fe69ef46a7773e38bfac07d
+      internalID: 987434928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_16
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 288
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e115ad3d82bf041aeec4b6a349cc0b
+      internalID: 22817700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_17
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 288
+        width: 51
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902de70529db5ae44b471faa2178d6b0
+      internalID: -1247580335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_18
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 288
+        width: 54
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3798d849a033944aec39e4b7efad01
+      internalID: 506006089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_19
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 288
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09ff850f73bd0949b63d167d6200fe9
+      internalID: -1597110376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_20
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 288
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92770de9e1bf3a1478b08dd56a2d6b70
+      internalID: 139857358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_21
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 288
+        width: 51
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d83fa80080e11d48b931bd989cedf79
+      internalID: -1303211569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_22
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 288
+        width: 48
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e92e336cd5eaf4abfae5ed45e6cc71
+      internalID: 772454372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_23
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 288
+        width: 51
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3828e2472efc3d49b6f415c963da1bb
+      internalID: -1969558662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 240
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d447d7a712e1d45b81f5caa0b7ed75
+      internalID: -879895536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_25
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 240
+        width: 57
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4489e099f222b48b9c72e44fe04052
+      internalID: -896486576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_26
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 240
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23600ef8a7a6db44d9c66e464c534f87
+      internalID: -675385203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_27
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 240
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978f6bccb9b2628479bd4791abbdc217
+      internalID: -861928761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_28
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 240
+        width: 53
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fb2b8b28f45784099a060d232ff36d
+      internalID: -128631850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_29
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 240
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ff4e3e3679c0841bb039b28c181a6b
+      internalID: 1184518991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_30
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 241
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02abb209264b012428c9d56f9e35382b
+      internalID: 982877329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_31
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 240
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2722b1daf9a8931468fba3f5a7e15506
+      internalID: 88091793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_32
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 192
+        width: 50
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f8eacedf9b5844e8248e9b1fe77dce
+      internalID: 875607172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_33
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 192
+        width: 54
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8040e38615f80f45b302d453ed96d08
+      internalID: -200872290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_34
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 192
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826999b5807e7674d865682426d7daa3
+      internalID: 1093800651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_35
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 192
+        width: 53
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2826f15237af18940aa85d60e5cdf72b
+      internalID: 1933521839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_36
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 192
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d223f906c8eb3cf469123bf9a31ec2cb
+      internalID: 1140506129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_37
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 192
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa91ad2d44829f45a8688e30053abd3
+      internalID: -1203611101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_38
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 192
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde021f33430dfe498b61568dce72ec6
+      internalID: 139428975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_39
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 192
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a1a9ba4a38c1c47aff15e65c2877f2
+      internalID: -215543843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_40
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 144
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ee00f65e45dc940941705e54733c80
+      internalID: -1040472102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_41
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 144
+        width: 54
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2c1e5b1ce60b34d82fc3692c7954d0
+      internalID: -971553830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_42
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 144
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61da165a497e4d24ba9bd3d45870f539
+      internalID: -1445506416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_43
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 144
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312f3ec57640b7146aecd7db1c8a709f
+      internalID: -1191249089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_44
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 144
+        width: 53
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44703995aaa5f6549b66b8b79f9ddb90
+      internalID: -1794622838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_45
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 144
+        width: 50
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1462a8659944fd4c8fd7474c49f7e53
+      internalID: -520704793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_46
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 145
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7c19f8349c9f9429575446be1089a6
+      internalID: -568456074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_47
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 144
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2657c34d529b1d340816660abe563ead
+      internalID: 503000668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_48
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 96
+        width: 50
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73326561e92199643858cdf48580c939
+      internalID: 1686572786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_49
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 96
+        width: 52
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e1c888d8192fc4fb273a93c98c2959
+      internalID: -1279208334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_50
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 96
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705e98a92b604414da596b3cdc0dfe7f
+      internalID: -1563332395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_51
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 96
+        width: 53
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cee02ab897883f44be6fadc3bd08348
+      internalID: -1323991057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_52
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 96
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea36945e96bea81459d9e250c71e1b75
+      internalID: 848571922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_53
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 96
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a7a05c95e2cf5498fbab850956a6e3
+      internalID: -1716654773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_54
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 96
+        width: 51
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694899979166eb7429c7b6d4359546b8
+      internalID: 912258022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_55
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 96
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83316c5c177cd2c4e89b02693b4215b3
+      internalID: 904120812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_56
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 48
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6c07362748bfc45b356d0a7cc5b2b9
+      internalID: 1399269182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_57
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 48
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768ed6eb7e1521b47af8b317f9c1c3bb
+      internalID: -357407600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_58
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 48
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cd63d4977848c48aff222c0e0d68a0
+      internalID: 563892977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_59
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 48
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1579a0274d030bc4c8b6ef78a57533ea
+      internalID: 304492479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_60
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 48
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956521944f349904da375a4be1503a3e
+      internalID: -1984592178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_61
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 48
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ad3336e2b20a24282e5d9e3693c76c
+      internalID: -1796032542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_62
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 48
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400beb52b8512d544ad3b2bacadb61af
+      internalID: 502557063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_63
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 48
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff42886baf3322b4da19d4e2080c5086
+      internalID: -2126292104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_64
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d825146a97f2bdc4faa53bd608888228
+      internalID: 471537715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_65
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ed6de6c4871454a95b8d858b7220f9
+      internalID: 279890912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_66
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706bbf1afdd154548bd8e79a3bd7005f
+      internalID: -1805052241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dogs-Remastered-00_67
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07492365bbd55934a914160811e1bdc2
+      internalID: -108438272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dogs-Remastered-00_0: -207706335
+      Dogs-Remastered-00_1: -221299605
+      Dogs-Remastered-00_10: 1503027224
+      Dogs-Remastered-00_11: -1385853173
+      Dogs-Remastered-00_12: 341780642
+      Dogs-Remastered-00_13: -798880901
+      Dogs-Remastered-00_14: 278264503
+      Dogs-Remastered-00_15: 987434928
+      Dogs-Remastered-00_16: 22817700
+      Dogs-Remastered-00_17: -1247580335
+      Dogs-Remastered-00_18: 506006089
+      Dogs-Remastered-00_19: -1597110376
+      Dogs-Remastered-00_2: -365238233
+      Dogs-Remastered-00_20: 139857358
+      Dogs-Remastered-00_21: -1303211569
+      Dogs-Remastered-00_22: 772454372
+      Dogs-Remastered-00_23: -1969558662
+      Dogs-Remastered-00_24: -879895536
+      Dogs-Remastered-00_25: -896486576
+      Dogs-Remastered-00_26: -675385203
+      Dogs-Remastered-00_27: -861928761
+      Dogs-Remastered-00_28: -128631850
+      Dogs-Remastered-00_29: 1184518991
+      Dogs-Remastered-00_3: 956939885
+      Dogs-Remastered-00_30: 982877329
+      Dogs-Remastered-00_31: 88091793
+      Dogs-Remastered-00_32: 875607172
+      Dogs-Remastered-00_33: -200872290
+      Dogs-Remastered-00_34: 1093800651
+      Dogs-Remastered-00_35: 1933521839
+      Dogs-Remastered-00_36: 1140506129
+      Dogs-Remastered-00_37: -1203611101
+      Dogs-Remastered-00_38: 139428975
+      Dogs-Remastered-00_39: -215543843
+      Dogs-Remastered-00_4: 2082775383
+      Dogs-Remastered-00_40: -1040472102
+      Dogs-Remastered-00_41: -971553830
+      Dogs-Remastered-00_42: -1445506416
+      Dogs-Remastered-00_43: -1191249089
+      Dogs-Remastered-00_44: -1794622838
+      Dogs-Remastered-00_45: -520704793
+      Dogs-Remastered-00_46: -568456074
+      Dogs-Remastered-00_47: 503000668
+      Dogs-Remastered-00_48: 1686572786
+      Dogs-Remastered-00_49: -1279208334
+      Dogs-Remastered-00_5: 1228177278
+      Dogs-Remastered-00_50: -1563332395
+      Dogs-Remastered-00_51: -1323991057
+      Dogs-Remastered-00_52: 848571922
+      Dogs-Remastered-00_53: -1716654773
+      Dogs-Remastered-00_54: 912258022
+      Dogs-Remastered-00_55: 904120812
+      Dogs-Remastered-00_56: 1399269182
+      Dogs-Remastered-00_57: -357407600
+      Dogs-Remastered-00_58: 563892977
+      Dogs-Remastered-00_59: 304492479
+      Dogs-Remastered-00_6: 723157746
+      Dogs-Remastered-00_60: -1984592178
+      Dogs-Remastered-00_61: -1796032542
+      Dogs-Remastered-00_62: 502557063
+      Dogs-Remastered-00_63: -2126292104
+      Dogs-Remastered-00_64: 471537715
+      Dogs-Remastered-00_65: 279890912
+      Dogs-Remastered-00_66: -1805052241
+      Dogs-Remastered-00_67: -108438272
+      Dogs-Remastered-00_7: 1450033700
+      Dogs-Remastered-00_8: 1555562558
+      Dogs-Remastered-00_9: -1000374090
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
