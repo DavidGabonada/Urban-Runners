@@ -40,12 +40,16 @@ public class CarAI2 : MonoBehaviour
         }
     }
 
-    // Detect collisions with the player
+    // Detect collisions with the player or Stop tagged object
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")) // Assuming the player has the tag "Player"
+        if (collision.gameObject.CompareTag("Player")) // Check if collided with the player
         {
             SceneManager.LoadScene("GameOver"); // Load the Game Over scene
+        }
+        else if (collision.gameObject.CompareTag("stop")) // Check if collided with a Stop tagged object
+        {
+            Destroy(this.gameObject); // Destroy the car
         }
     }
 }
