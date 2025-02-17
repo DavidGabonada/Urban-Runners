@@ -1,76 +1,83 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class ScooterCollector : MonoBehaviour
 {
-    [SerializeField] private ParticleSystem collectEffect; // Particle system for collection effect
-    [SerializeField] private AudioSource collectSound; // Sound effect for collecting items
-    [SerializeField] private GameObject kickboard; // Reference to the kickboard
-    private bool canUseKickboard = false; // Track if the player can use the kickboard
-    private bool isKickboard = false; // Track if kickboard mode is active
-    [SerializeField] private Animator anim; // Animator reference
-    [SerializeField] private float kickboardDuration = 6f; // Duration for kickboard activation
+    [SerializeField] private ParticleSystem collectEffect;
+    [SerializeField] private AudioSource collectSound;
+    [SerializeField] private GameObject kickboard;
+    [SerializeField] private Animator anim;
+    [SerializeField] private float kickboardDuration = 6f;
+
+    private bool canActivateKickboard = false; // Ensure it's false initially
+    private bool isKickboardActive = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("CollectibleItem"))
         {
-            // Enable the kickboard for a limited time
-            canUseKickboard = true;
-            if (kickboard != null)
-            {
-                kickboard.SetActive(true);
-            }
+            // Enable kickboard activation
+            canActivateKickboard = true;
 
             // Play particle effect
             if (collectEffect != null)
-            {
                 Instantiate(collectEffect, other.transform.position, Quaternion.identity);
-            }
 
             // Play sound effect
-            if (collectSound != null)
-            {
-                collectSound.Play();
-            }
+            collectSound?.Play();
 
             // Destroy the collected object
             Destroy(other.gameObject);
 
-            // Start the kickboard timer
-            StartCoroutine(KickboardTimer());
+            Debug.Log("Collected item! Kickboard ready. Press Alpha4 to activate.");
         }
     }
 
     private IEnumerator KickboardTimer()
     {
         yield return new WaitForSeconds(kickboardDuration);
-        canUseKickboard = false;
-        if (kickboard != null)
-        {
-            kickboard.SetActive(false);
-        }
+        DeactivateKickboard();
+        canActivateKickboard = false; // Force reset again
     }
 
-    public bool CanUseKickboard()
+
+    private void ActivateKickboard()
     {
-        return canUseKickboard;
+        if (!canActivateKickboard) return; // Double-check activation status
+
+        isKickboardActive = true;
+        anim.SetBool("isKickBoard", true);
+        kickboard?.SetActive(true);
+        Debug.Log("Kickboard activated!");
+
+        StartCoroutine(KickboardTimer());
+    }
+
+    private void DeactivateKickboard()
+    {
+        isKickboardActive = false;
+        canActivateKickboard = false; // Reset for next collection
+        anim.SetBool("isKickBoard", false);
+        kickboard?.SetActive(false);
+        Debug.Log("Kickboard deactivated! Collect another item to use again.");
     }
 
     private void Update()
     {
-        KickBoard();
-    }
+        Debug.Log($"canActivateKickboard: {canActivateKickboard} | isKickboardActive: {isKickboardActive}");
 
-    private void KickBoard()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha4) && canUseKickboard)
+        // Allow activation with either L or Alpha4
+        if ((Input.GetKeyDown(KeyCode.L) || Input.GetKeyDown(KeyCode.Alpha4)) && canActivateKickboard && !isKickboardActive)
         {
-            isKickboard = !isKickboard;
-            anim.SetBool("isKickBoard", isKickboard);
-            Debug.Log("KickBoard mode: " + isKickboard);
+            ActivateKickboard();
         }
     }
+
+    private void OnEnable()
+    {
+        // Ensure it's disabled on start
+        canActivateKickboard = false;
+        isKickboardActive = false;
+    }
+
 }

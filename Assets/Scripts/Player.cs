@@ -13,7 +13,7 @@ namespace ClearSky
         public int maxHealth = 100;
         public int currentHealth;
         public HealthBar healthBar;
-        public float brickSpeed = 20f;
+        private float brickSpeed = 20f;
 
         private Rigidbody2D rb;
         private Animator anim;
@@ -50,15 +50,20 @@ namespace ClearSky
         {
             if (!alive) return;
 
+            // Reduce health
             currentHealth -= damage;
             currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
             healthBar.SetHealth(currentHealth);
 
             Debug.Log("Player took damage. Current Health: " + currentHealth);
+
+            // Trigger hurt animation
             anim.SetTrigger("hurt");
 
+            // Apply knockback in the opposite direction of where the player is facing
             rb.AddForce(new Vector2(direction * -5f, 1f), ForceMode2D.Impulse);
 
+            // Check if health reaches 0 and die if so
             if (currentHealth <= 0)
             {
                 Die();

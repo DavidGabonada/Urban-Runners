@@ -5,17 +5,24 @@ using ClearSky; // Add this line to reference the Player class in the ClearSky n
 
 public class EnemyDamage : MonoBehaviour
 {
-    public int damage;
+    public int damage;   // Damage the enemy will apply
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private Player player; // Reference to the player
 
+    void Start()
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Player player = FindObjectOfType<Player>();
-            player.TakeDamage(damage);
-            Debug.Log("Damage:  " + damage);
-        }
+        // Cache the player reference when the script starts
+        player = FindObjectOfType<Player>();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Check if the collider belongs to the player
+        if (collision.CompareTag("Player") && player != null)
+        {
+            // Apply damage to the player
+            player.TakeDamage(damage);
+            Debug.Log("Damage dealt: " + damage);
+        }
+    }
 }

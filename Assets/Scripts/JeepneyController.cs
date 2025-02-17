@@ -6,7 +6,7 @@ public class JeepneyController : MonoBehaviour
 {
     Rigidbody2D jeepneyRB;
     float moveSpeed = 700.0f;
-    float direction = -1.0f;
+    float direction = 1.0f;
     // Start is called before the first frame update
     void Start()
     {
