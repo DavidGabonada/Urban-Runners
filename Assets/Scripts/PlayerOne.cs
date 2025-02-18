@@ -1,27 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; // Import Scene Management
+using UnityEngine.SceneManagement;
 
 namespace ClearSky
 {
     public class PlayerOne : MonoBehaviour
     {
+        public enum CharacterType { Player, Enemy }
+
+        public CharacterType characterType = CharacterType.Player;
+
         public float movePower = 10f;
-        public float KickBoardMovePower = 15f;
         public float jumpPower = 20f;
 
         public int currentHealth;
         public int maxHealth = 100;
         public HealthBar healthBar;
 
-        public LayerMask groundLayer; // Add a LayerMask for ground detection
+        public LayerMask groundLayer;
 
         private Rigidbody2D rb;
         private Animator anim;
         private int direction = 1;
         private bool alive = true;
-        private bool isKickboard = true; // Automatically riding the scooter
+        public int damage = 10;
 
         void Start()
         {
@@ -29,10 +32,6 @@ namespace ClearSky
             anim = GetComponent<Animator>();
             currentHealth = maxHealth;
             healthBar.SetMaxHealth(maxHealth);
-
-            // Automatically start on the scooter
-            isKickboard = true;
-            anim.SetBool("isKickBoard", true);
         }
 
         private void Update()
@@ -41,24 +40,12 @@ namespace ClearSky
 
             if (alive)
             {
-                Jump();
-                Run();
+                if (characterType == CharacterType.Player)
+                {
+                    Jump();
+                    Run();
+                }
             }
-        }
-
-        void LateUpdate()
-        {
-            if (!Input.GetKeyDown(KeyCode.Alpha5) && alive)
-            {
-                StartCoroutine(ResetKickboard());
-            }
-        }
-
-        IEnumerator ResetKickboard()
-        {
-            yield return new WaitForSeconds(0.5f); // Delay before re-enabling kickboard
-            isKickboard = true;
-            anim.SetBool("isKickBoard", true);
         }
 
         public void TakeDamage(int damage)
@@ -67,7 +54,15 @@ namespace ClearSky
 
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
-            Hurt(); // Hurt animation and knockback apply
+
+            if (characterType == CharacterType.Player)
+            {
+                Hurt(); // Hurt animation and knockback for player
+            }
+            else if (characterType == CharacterType.Enemy)
+            {
+                TriggerHurtAnimation(); // Hurt animation for enemy
+            }
 
             if (currentHealth <= 0)
             {
@@ -78,23 +73,26 @@ namespace ClearSky
 
         void Run()
         {
-            float moveInput = Input.GetAxisRaw("Horizontal");
-
-            if (moveInput == 0)
+            if (characterType == CharacterType.Player)
             {
-                anim.SetBool("isRun", false);
-                return;
-            }
+                float moveInput = Input.GetAxisRaw("Horizontal");
 
-            direction = moveInput < 0 ? -1 : 1;
-            transform.localScale = new Vector3(direction, 1, 1);
+                if (moveInput == 0)
+                {
+                    anim.SetBool("isRun", false);
+                    return;
+                }
 
-            Vector3 moveVelocity = moveInput * (isKickboard ? KickBoardMovePower : movePower) * Time.deltaTime * Vector3.right;
-            transform.position += moveVelocity;
+                direction = moveInput < 0 ? -1 : 1;
+                transform.localScale = new Vector3(direction, 1, 1);
 
-            if (!anim.GetBool("isJump"))
-            {
-                anim.SetBool("isRun", true);
+                Vector3 moveVelocity = moveInput * movePower * Time.deltaTime * Vector3.right;
+                transform.position += moveVelocity;
+
+                if (!anim.GetBool("isJump"))
+                {
+                    anim.SetBool("isRun", true);
+                }
             }
         }
 
@@ -107,19 +105,22 @@ namespace ClearSky
 
             if (Input.GetButtonDown("Jump") || Input.GetAxisRaw("Vertical") > 0)
             {
-                rb.velocity = new Vector2(rb.velocity.x, 0);
-
-                float jumpForce = isKickboard ? jumpPower * 1.1f : jumpPower; // Slightly higher jump if on kickboard
-                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-
-                anim.SetBool("isJump", true);
+                if (IsGrounded())
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, 0);
+                    rb.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+                    anim.SetBool("isJump", true);
+                }
             }
         }
 
         bool IsGrounded()
         {
-            return Physics2D.Raycast(transform.position, Vector2.down, 1f, groundLayer);
+            bool grounded = Physics2D.Raycast(transform.position, Vector2.down, 1.1f, groundLayer);
+            Debug.Log("Is Grounded: " + grounded); // Add this for debugging
+            return grounded;
         }
+
 
         void Hurt()
         {
@@ -127,25 +128,63 @@ namespace ClearSky
             rb.AddForce(new Vector2(direction * -5f, 1f), ForceMode2D.Impulse);
         }
 
+        void TriggerHurtAnimation()
+        {
+            anim.SetTrigger("hurt");
+            rb.AddForce(new Vector2(-5f, 1f), ForceMode2D.Impulse);
+        }
+
         void Die()
         {
-            isKickboard = false;
-            anim.SetBool("isKickBoard", false);
             anim.SetTrigger("die");
             alive = false;
+
+            StartCoroutine(RespawnAfterDelay());
+        }
+
+        IEnumerator RespawnAfterDelay()
+        {
+            yield return new WaitForSeconds(2f);
+            if (characterType == CharacterType.Player)
+            {
+                SceneManager.LoadScene("Game Over");
+            }
+            else
+            {
+                StartCoroutine(DisablePhysics());
+            }
+        }
+
+        IEnumerator DisablePhysics()
+        {
+            yield return new WaitForSeconds(1f);
+            rb.velocity = Vector2.zero;
+            rb.bodyType = RigidbodyType2D.Static;
+            enabled = false;
+            Destroy(gameObject);
         }
 
         void Restart()
         {
             if (Input.GetKeyDown(KeyCode.Alpha0))
             {
-                isKickboard = true;
-                anim.SetBool("isKickBoard", true);
                 anim.SetTrigger("idle");
                 alive = true;
                 currentHealth = maxHealth;
                 healthBar.SetMaxHealth(maxHealth);
                 transform.position = new Vector3(0, 0, 0);
+            }
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (characterType == CharacterType.Enemy && collision.gameObject.CompareTag("Player"))
+            {
+                PlayerOne player = collision.gameObject.GetComponent<PlayerOne>();
+                if (player != null)
+                {
+                    player.TakeDamage(damage);
+                }
             }
         }
     }

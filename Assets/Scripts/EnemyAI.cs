@@ -80,18 +80,30 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] Transform player;
+    [SerializeField] private string playerTag = "Player";  // Tag for the player
+    private Transform player;
     private Rigidbody2D enemyRB;
-    [SerializeField] private float moveSpeed = 1.0f;
+    private SpriteRenderer spriteRenderer;  // Reference to the sprite renderer
+    [SerializeField] private float moveSpeed = 10000.0f;  // Adjust speed for better control
     [SerializeField] private float attackRange = 5.0f;
 
     void Start()
     {
         enemyRB = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>(); // Get the sprite renderer
 
-        if (player == null)
+        // Disable gravity so the enemy stays in the air
+        enemyRB.gravityScale = 0;
+
+        // Find the player by its tag
+        GameObject playerObj = GameObject.FindGameObjectWithTag(playerTag);
+        if (playerObj != null)
         {
-            Debug.LogWarning("Player reference is missing!");
+            player = playerObj.transform;
+        }
+        else
+        {
+            Debug.LogWarning("Player not found with tag: " + playerTag);
         }
     }
 
@@ -101,26 +113,40 @@ public class EnemyAI : MonoBehaviour
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
+        // If within attack range, attack the player
         if (distanceToPlayer <= attackRange)
         {
             Attack();
         }
+        else
+        {
+            MoveTowardsPlayer();
+        }
     }
+
+    void MoveTowardsPlayer()
+    {
+        // Calculate direction towards the player
+        Vector2 direction = (player.position - transform.position).normalized;
+
+        // Move enemy using Rigidbody2D velocity
+        enemyRB.velocity = new Vector2(direction.x * moveSpeed, direction.y * moveSpeed);
+
+        // Flip the sprite based on the player's position
+        if (direction.x > 0)
+        {
+            spriteRenderer.flipX = true;  // Facing right
+        }
+        else if (direction.x < 0)
+        {
+            spriteRenderer.flipX = false; // Facing left (default)
+        }
+    }
+
 
     void Attack()
     {
-        // Flip the enemy to face the player without distorting its size
-        if (player.position.x < transform.position.x)
-        {
-            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, 1);
-        }
-        else
-        {
-            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, 1);
-        }
-
-        // Move towards the player
-        transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+        // Attack logic goes here (e.g., trigger animation, deal damage, etc.)
+        Debug.Log("Attacking player!");
     }
 }
-
